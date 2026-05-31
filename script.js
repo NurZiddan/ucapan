@@ -136,11 +136,14 @@ Elice ❤️
 
 const envelope = document.getElementById("envelope");
 
+const letter = document.getElementById("letter");
+
 const typed = document.getElementById("typed-text");
 
 const bgm = document.getElementById("bgm");
 
 const letterTitle = document.getElementById("letter-title");
+
 
 // ========================
 // STATE
@@ -198,15 +201,23 @@ function startCountdown() {
 // ========================
 
 envelope.addEventListener("click", () => {
+
   if (started) return;
 
   started = true;
 
-  envelope.classList.add("open");
-
   bgm.play();
 
-  startTyping();
+  envelope.classList.add("hide");
+
+  setTimeout(() => {
+
+    letter.classList.add("show");
+
+    startTyping();
+
+  }, 700);
+
 });
 
 // ========================

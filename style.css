@@ -371,15 +371,13 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-#typed-text {
+#typed-text{
 
-    height:170px;
+    line-height:2.2;
 
-    overflow-y:auto;
+    font-size:1.05rem;
 
-    line-height:2;
-
-    padding-right:10px;
+    color:#555;
 }
 
 /* =========================

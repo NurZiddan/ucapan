@@ -185,7 +185,7 @@ body {
   height: 240px;
   cursor: pointer;
 
-  overflow: visible;
+  overflow: hidden;
 }
 
 .envelope-body {

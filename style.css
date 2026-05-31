@@ -181,13 +181,11 @@ body {
 
 #envelope {
   position: relative;
-
   width: 360px;
   height: 240px;
-
   cursor: pointer;
 
-  overflow: hidden; /* PENTING */
+  overflow: visible;
 }
 
 .envelope-body {
@@ -227,7 +225,7 @@ body {
   transform:
   rotateX(180deg);
 
-  z-index:1;
+  /* z-index:1; */
 }
 
 #letter{
@@ -240,7 +238,7 @@ body {
 
     left:6%;
 
-    top:80px;
+    top:40px;
 
     background:
     linear-gradient(
@@ -258,7 +256,7 @@ body {
     box-shadow:
     0 15px 30px rgba(0,0,0,.15);
 
-    transform:translateY(180px);
+    transform:translateY(220px);
 
     opacity:0;
 
@@ -270,7 +268,7 @@ body {
 .open #letter {
 
     transform:
-        translateY(-20px);
+        translateY(-90px);
 
     opacity:1;
 }

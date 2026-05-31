@@ -253,45 +253,79 @@ function changeLanguage(lang) {
 // SAKURA EFFECT
 // ========================
 
-function createSakura() {
-  const sakura = document.createElement("div");
+function createSakura(){
 
-  sakura.innerHTML = "🌸";
+const sakura =
+document.createElement("div");
 
-  sakura.style.position = "fixed";
+sakura.innerHTML = "🌸";
 
-  sakura.style.top = "-20px";
+sakura.style.position = "fixed";
 
-  sakura.style.left = Math.random() * 100 + "vw";
+sakura.style.top = "-50px";
 
-  sakura.style.fontSize = 20 + Math.random() * 15 + "px";
+sakura.style.left =
+Math.random() * window.innerWidth + "px";
 
-  sakura.style.pointerEvents = "none";
+sakura.style.fontSize =
+(18 + Math.random() * 18) + "px";
 
-  sakura.style.zIndex = "999";
+sakura.style.opacity =
+0.6 + Math.random() * 0.4;
 
-  document.body.appendChild(sakura);
+sakura.style.pointerEvents =
+"none";
 
-  let y = -20;
+sakura.style.zIndex =
+999;
 
-  const drift = Math.random() * 2 - 1;
+document.body.appendChild(
+sakura
+);
 
-  const fall = setInterval(() => {
-    y += 2;
+let posY = -50;
 
-    sakura.style.top = y + "px";
+let drift =
+(Math.random()*4)-2;
 
-    sakura.style.left = parseFloat(sakura.style.left) + drift + "px";
+const speed =
+1 + Math.random()*3;
 
-    if (y > window.innerHeight) {
-      clearInterval(fall);
+const fall = setInterval(()=>{
 
-      sakura.remove();
-    }
-  }, 30);
+posY += speed;
+
+sakura.style.top =
+posY + "px";
+
+sakura.style.left =
+(
+parseFloat(
+sakura.style.left
+)
++
+Math.sin(posY/50)*0.8
++
+drift*0.1
+)
++ "px";
+
+if(
+posY >
+window.innerHeight + 100
+){
+
+clearInterval(fall);
+
+sakura.remove();
+
 }
 
-setInterval(createSakura, 350);
+},16);
+
+}
+
+setInterval(createSakura, 700);
 
 // ========================
 // STAR EFFECT

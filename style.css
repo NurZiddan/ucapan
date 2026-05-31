@@ -229,7 +229,10 @@ body {
 
   width: 92%;
 
-  height: 550px;
+  transform:
+   translateY(120px);
+
+   opacity:0;
 
   left: 4%;
 
@@ -247,7 +250,8 @@ body {
 }
 
 .open #letter {
-  transform: translateY(-360px);
+  transform: translateY(-320px);
+   opacity:1;
 }
 
 #letter-title {

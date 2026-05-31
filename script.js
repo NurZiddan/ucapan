@@ -38,12 +38,12 @@ Joyeux 4ème anniversaire de début.
 
 Avec amour,
 
-Elice ❤️
+Morak ❤️
 `,
   },
 
   en: {
-    title: "To Our Dearest Zietta",
+    title: "To My Dearest Zietta",
 
     text: `
 
@@ -77,7 +77,7 @@ Happy 4th Anniversary Debut.
 
 With Love,
 
-Elice ❤️
+Morak ❤️
 `,
   },
 
@@ -86,7 +86,7 @@ Elice ❤️
 
     text: `
 
-Zietta yang kami sayangi,
+Zietta yang ku sayangi,
 
 Empat tahun lalu,
 sebuah cahaya mulai bersinar.
@@ -125,7 +125,7 @@ selalu menyertaimu.
 
 Dengan penuh kasih,
 
-Elice ❤️
+Morak ❤️
 `,
   },
 };
